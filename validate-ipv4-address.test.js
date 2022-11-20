@@ -7,4 +7,10 @@ describe('IP Address Validator', () => {
         const expected = true
         expect(result).toBe(expected)
     })
+    test('192.168.1.1 should return true', () => {
+        const input = '192.168.1.1'
+        const result = validateIpv4Address(input)
+        const expected = true
+        expect(result).toBe(expected)
+    })
 })
