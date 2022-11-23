@@ -25,4 +25,10 @@ describe('IP Address Validator', () => {
         const expected = true
         expect(result).toBe(expected)
     })
+    test('0.0.0.0 should return false', () => {
+        const input = '0.0.0.0'
+        const result = validateIpv4Address(input)
+        const expected = false
+        expect(result).toBe(expected)
+    })
 })
